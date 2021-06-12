@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Partidos</title>
+</head>
+<body>
+<h3>Marcador de partidos</h3>
+<form action="/partidos" method="post">
+    <label for="partido_1">partido</label>
+    <input type="text" id="partido_1" name="partido_1">
+    <label for="partido_2">Equipo 2</label>
+    <input type="text" id="partido_2" name="partido_2">
+    <label for="partido_3">Equipo 3</label>
+    <input type="text" id="partido_3" name="partido_3">
+    <label for="partido_4">Equipo 4</label>
+    <input type="text" id="partido_4" name="partido_4">
+    <button type="submit1">Registrar</button>
+
+</form>
+{% for item in partidos %}
+<p>{{item1}}</p>
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EQUIPOS</title>
+</head>
+<body>
+<h3>Mostrando los equipos existentes</h3>
+<form action="/equipos" method="post">
+    <label for="equipo_1">Equipo 1</label>
+    <input type="text" id="equipo_1" name="equipo_1">
+    <label for="equipo_2">Equipo 2</label>
+    <input type="text" id="equipo_2" name="equipo_2">
+    <label for="equipo_3">Equipo 3</label>
+    <input type="text" id="equipo_3" name="equipo_3">
+    <label for="equipo_4">Equipo 4</label>
+    <input type="text" id="equipo_4" name="equipo_4">
+    <button type="submit">Registrar</button>
+
+</form>
+{% for item in equipos %}
+<table class="default">
+
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Equipo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td>{{item}}</td>
+
+    </tr>
+  </tbody>
+</table>
+
+{% endfor %}
+</body>
+</html>
